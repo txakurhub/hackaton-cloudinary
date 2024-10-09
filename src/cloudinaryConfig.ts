@@ -1,10 +1,11 @@
 import { Cloudinary } from "@cloudinary/url-gen";
+import { apiKey, apiSecret, cloudName } from "./utils/constants";
 
 const cld = new Cloudinary({
   cloud: {
-    cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-    apiKey: process.env.CLOUDINARY_API_KEY,
-    apiSecret: process.env.CLOUDINARY_API_SECRET,
+    cloudName: cloudName,
+    apiKey: apiKey,
+    apiSecret: apiSecret,
   },
 });
 

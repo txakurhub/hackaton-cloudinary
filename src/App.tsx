@@ -1,3 +1,4 @@
+import ImageUploader from "./components/ImageUploader"
 
 
 function App() {
@@ -22,12 +23,7 @@ function App() {
         </div>
       </header>
       <section className="max-w-screen-lg xl:max-w-screen-xl mx-auto">
-        {/* <div className="sm:flex sm:space-x-6 space-y-4 sm:space-y-0 items-center">
-        <a href="https://github.com/jvidalv/vital">
-          <Button>Visit on Github</Button>
-        </a>
-        <CopyButton text="npx degit jvidalv/vital my-app" />
-      </div> */}
+        <ImageUploader />
       </section>
       <section className="max-w-screen-lg xl:max-w-screen-xl mx-auto grid grid-cols-10 gap-4">
         {/* {features.map((props, index) => (
@@ -43,7 +39,7 @@ function App() {
       </section>
       <footer className="pb-16 max-w-screen-lg xl:max-w-screen-xl mx-auto text-center sm:text-right text-gray-400 font-bold">
         <a href="https://github.com/jvidalv">
-       txakur  {new Date().getFullYear()}
+          txakur  {new Date().getFullYear()}
         </a>
       </footer>
     </main>
