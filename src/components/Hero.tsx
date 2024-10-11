@@ -1,12 +1,18 @@
 const Hero: React.FC = () => {
     return (
         <header className="h-screen z-10 w-full flex items-center justify-between bg-black p-2
-        xl:flex-col xl:p-10 ">
+        xl:flex-col xl:flex-col-reverse xl:p-10 ">
             <div className="w-4/12 h-full  text-white font-title flex flex-col items-center justify-center">
-                <h1 className="rotate-90 xl:rotate-0 whitespace-nowrap text-[12rem] uppercase">noche de  bugs</h1>
+                <h1 className="rotate-90 whitespace-nowrap text-9xl 
+                xl:text-[15rem] xl:rotate-0">noche de  bugs</h1>
             </div>
-            <div className="border-4 border-white w-8/12 h-full">
-
+            <div className="w-8/12 h-full border-4 border-white p-4 
+            xl:border-0 xl:w-full">
+                <div className="text-white font-body flex flex-col items-end gap-5">
+                    <h2 className="text-4xl xl:text-6xl">imagen</h2>
+                    <h2 className="text-4xl xl:text-6xl">video</h2>
+                    <h2 className="text-4xl xl:text-6xl">texto</h2>
+                </div>
             </div>
         </header>
     )
